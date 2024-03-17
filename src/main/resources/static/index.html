@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple RAG4j Chat Interface</title>
+</head>
+<body>
+<h2>Ask a Question:</h2>
+<input type="text" id="questionInput" placeholder="Type your question here..." />
+<button onclick="askQuestion()">Submit</button>
+
+<div id="answerSection" style="display:none;">
+    <h3>Answer:</h3>
+    <p id="answerText"></p>
+</div>
+
+<h2>Upload a file:</h2>
+<form id="fileUploadForm">
+    <input type="file" id="fileInput" name="file" />
+    <button type="button" onclick="uploadFile()">Upload</button>
+</form>
+<p id="uploadStatus"></p>
+
+<script>
+    function askQuestion() {
+        var question = document.getElementById('questionInput').value;
+        // Use AJAX to send this question to your Spring Boot backend
+        // For demonstration, assuming an endpoint "/api/ask"
+        fetch('/api/ask', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ question: question }),
+        })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('answerText').textContent = data.answer;
+                document.getElementById('answerSection').style.display = 'block';
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+    }
+
+    function uploadFile() {
+        var formData = new FormData();
+        formData.append("file", document.getElementById('fileInput').files[0]);
+
+        fetch('/api/upload', {
+            method: 'POST',
+            body: formData
+        })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('uploadStatus').textContent = data.message;
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                document.getElementById('uploadStatus').textContent = 'Error uploading file.';
+            });
+    }
+</script>
+</body>
+</html>
+
+
+
