@@ -1,6 +1,6 @@
-package com.ustsv.springrag4j;
+package com.beshton.rag.springrag4j;
 
-//import com.ustsv.service.Rag4jService;
+//import com.beshton.rag.service.Rag4jService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;

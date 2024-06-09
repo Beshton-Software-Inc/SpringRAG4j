@@ -1,4 +1,4 @@
-package com.ustsv.springrag4j;
+package com.beshton.rag;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

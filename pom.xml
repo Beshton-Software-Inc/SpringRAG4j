@@ -8,7 +8,7 @@
         <version>3.2.3</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.ustsv</groupId>
+    <groupId>com.beshton.rag</groupId>
     <artifactId>SpringRAG4j</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>SpringRAG4j</name>

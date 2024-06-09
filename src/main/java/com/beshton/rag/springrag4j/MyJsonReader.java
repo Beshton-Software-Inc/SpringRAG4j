@@ -1,4 +1,4 @@
-package com.ustsv.springrag4j;
+package com.beshton.rag.springrag4j;
 
 import org.json.JSONObject;
 import org.rag4j.util.resource.ResourceException;

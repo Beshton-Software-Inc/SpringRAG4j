@@ -1,4 +1,4 @@
-//package com.ustsv.service;
+//package com.beshton.rag.service;
 //
 //import org.springframework.stereotype.Service;
 //// Import your RAG4j project classes as needed

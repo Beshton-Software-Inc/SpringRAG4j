@@ -1,6 +1,6 @@
-//package com.ustsv.controller;
+//package com.beshton.rag.controller;
 //
-//import com.ustsv.service.Rag4jService;
+//import com.beshton.rag.service.Rag4jService;
 //import org.springframework.http.ResponseEntity;
 //import org.springframework.web.bind.annotation.GetMapping;
 //import org.springframework.web.bind.annotation.PostMapping;

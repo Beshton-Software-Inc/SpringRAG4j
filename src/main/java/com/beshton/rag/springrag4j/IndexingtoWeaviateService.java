@@ -1,7 +1,6 @@
-package com.ustsv.springrag4j;
+package com.beshton.rag.springrag4j;
 
 import com.azure.ai.openai.OpenAIClient;
-import org.rag4j.applications.indexing.VasaContentReader;
 import org.rag4j.applications.indexing.VasaWeaviateChunkClassBuilder;
 import org.rag4j.indexing.IndexingService;
 import org.rag4j.indexing.splitters.SentenceSplitter;

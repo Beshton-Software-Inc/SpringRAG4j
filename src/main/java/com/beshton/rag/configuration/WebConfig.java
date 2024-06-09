@@ -1,4 +1,4 @@
-package com.ustsv.configuration;
+package com.beshton.rag.configuration;
 
 //@Configuration
 //public class WebConfig implements WebMvcConfigurer {

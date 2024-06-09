@@ -1,4 +1,4 @@
-package com.ustsv.springrag4j;
+package com.beshton.rag.springrag4j;
 
 import org.springframework.stereotype.Service;
 // Import your RAG4j project classes as needed
@@ -23,8 +23,6 @@ import org.rag4j.rag.tracker.RAGObserver;
 import org.rag4j.rag.tracker.RAGObserverPersistor;
 import org.rag4j.rag.tracker.RAGTracker;
 import org.rag4j.util.keyloader.KeyLoader;
-
-import java.util.List;
 
 @Service
 public class RAG4jService {

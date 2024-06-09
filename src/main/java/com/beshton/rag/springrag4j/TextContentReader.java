@@ -1,18 +1,12 @@
-package com.ustsv.springrag4j;
+package com.beshton.rag.springrag4j;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.stream.Stream;
-import java.util.stream.Collectors;
 
-import net.minidev.json.JSONObject;
 import org.rag4j.indexing.ContentReader;
 import org.rag4j.indexing.InputDocument;
-import org.rag4j.util.resource.JsonlReader;
 import org.springframework.web.multipart.MultipartFile;
 
 public class TextContentReader implements ContentReader {
